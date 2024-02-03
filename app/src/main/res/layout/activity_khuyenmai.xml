@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KhuyenMaiActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#115A53"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Khuyến mãi"
+        android:textColor="#0C0C0C"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtMaKm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã khuyến mãi" />
+
+    <EditText
+        android:id="@+id/edtNoiDungMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập nội dung" />
+
+
+    <EditText
+        android:id="@+id/edtNgayThang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ngày tháng" />
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="3sp"
+            android:id="@+id/btnThemKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="ChucNangKM"
+            android:text="Thêm" />
+
+        <Button
+            android:layout_marginStart="2sp"
+
+            android:id="@+id/btnXoaKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ChucNangKM"
+            android:text="Xoá" />
+
+        <Button
+            android:layout_marginStart="12sp"
+
+            android:id="@+id/btnSuaKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ChucNangKM"
+            android:text="Sửa" />
+
+        <Button
+            android:layout_marginStart="12sp"
+
+            android:id="@+id/btnClearKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ChucNangKM"
+            android:text="Clear" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvKhuyenMai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

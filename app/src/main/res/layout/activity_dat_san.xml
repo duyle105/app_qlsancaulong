@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DatSanActivity"
+    android:background="@drawable/phu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="ĐẶT SÂN"
+        android:textColor="#111"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtNgayDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ngày đăng kí"
+        android:inputType="date"
+        android:textSize="20sp"></EditText>
+
+    <EditText
+        android:id="@+id/edtHoTenKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập họ tên KH :"
+        android:inputType="text"
+        android:textSize="20sp"></EditText>
+
+    <EditText
+        android:id="@+id/edtSoDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số điện thoại :"
+        android:inputType="number"
+        android:textSize="20sp"></EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="LOẠI KHÁCH"
+        android:textColor="#111"
+        android:textSize="23sp"
+        android:textStyle="bold|italic" />
+    <Spinner
+        android:id="@+id/spnLoaiKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:text="MÃ SÂN"
+        android:textColor="#111"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+    <Spinner
+        android:id="@+id/spnMaSan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnThem"
+            android:onClick="ChucNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_add_24"
+            android:layout_margin="2dp"
+            android:textSize="11sp"
+            android:text="Thêm"></Button>
+        <Button
+            android:id="@+id/btnXoa"
+            android:onClick="ChucNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_delete_forever_24"
+            android:layout_margin="2dp"
+            android:textSize="11sp"
+            android:text="XÓA"></Button>
+        <Button
+            android:id="@+id/btnSua"
+            android:onClick="ChucNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_update_24"
+            android:layout_margin="2dp"
+            android:textSize="11sp"
+            android:text="SỬA"></Button>
+        <Button
+            android:id="@+id/btnClearAll"
+            android:onClick="ChucNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_clear_all_24"
+            android:layout_margin="2dp"
+            android:textSize="11sp"
+            android:text="CLEAR"></Button>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvDanhSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgLoaiKhach"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="100dp"
+        android:layout_height="100dp"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#009688"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khách hàng :"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:id="@+id/txtHoTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Điện thoại :"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:id="@+id/txtSoDienThoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khung giờ :"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:id="@+id/txtKhungGio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

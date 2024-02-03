@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Trang_Chu"
+    android:orientation="vertical"
+    android:background="@drawable/nen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F3EEEE">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnMenu"
+            android:background="@drawable/baseline_menu_24"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnMail"
+            android:background="@drawable/baseline_email_24"
+            android:layout_marginLeft="230dp" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnSupport"
+            android:background="@drawable/baseline_support_agent_24"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh Sách Sân"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="#F11212"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:id="@+id/lvDanhSach"
+        android:layout_weight="0.5"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/baseline_add_24"
+        android:layout_gravity="right"
+        android:id="@+id/btnDatSanTrangChu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAEAF4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFind"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:drawableTop="@drawable/baseline_local_fire_department_24"
+            android:drawableTint="#C50B0B"
+            android:backgroundTint="#F1EBEB"
+            android:text="Find"
+            android:textColor="#C50B0B" />
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/baseline_videogame_asset_24"
+            android:drawableTint="#130707"
+            android:backgroundTint="#F1EBEB"
+            android:text="Booking"
+            android:textColor="#130202"/>
+
+        <Button
+            android:id="@+id/btnMyBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/baseline_monetization_on_24"
+            android:drawableTint="#130707"
+            android:backgroundTint="#F1EBEB"
+            android:text="MyBooking"
+            android:textColor="#130202"/>
+
+        <Button
+            android:id="@+id/btnMyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/baseline_supervised_user_circle_24"
+            android:drawableTint="#130707"
+            android:backgroundTint="#F1EBEB"
+            android:text="Profile"
+            android:textColor="#130202"/>
+    </LinearLayout>
+
+</LinearLayout>

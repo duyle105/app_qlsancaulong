@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnPromotion"
+        android:icon="@drawable/promotion"
+        android:title="Quà của tôi"
+        app:showAsAction="always"></item>
+     <item
+        android:id="@+id/mnSave"
+        android:icon="@drawable/save"
+        android:title="LƯU"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/mnRead"
+        android:icon="@drawable/readdata"
+        android:title="ĐỌC"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/mnExit"
+        android:icon="@drawable/exit"
+        android:title="THOÁT"
+        app:showAsAction="always"></item>
+</menu>

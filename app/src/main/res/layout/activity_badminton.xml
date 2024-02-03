@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivityy"
+    android:orientation="vertical"
+    android:background="@drawable/nen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Badminton app!"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="170dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Log into account"
+        android:textSize="25dp"
+        android:textColor="#F8F5F5"
+        android:backgroundTint="#F34242"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreate"
+        android:text="Create an account"
+        android:textSize="25dp"
+        android:textColor="#0B0101"
+        android:backgroundTint="#44CCD8"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>
